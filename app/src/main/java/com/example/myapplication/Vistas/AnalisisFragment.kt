@@ -10,8 +10,12 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
+import com.google.firebase.auth.FirebaseAuth
 
 class AnalisisFragment : Fragment() {
+
+    //firebase
+    private lateinit var auth: FirebaseAuth
 
     private var consumoActual = 0.0f
     private var consumoTextView: TextView? = null
@@ -25,10 +29,14 @@ class AnalisisFragment : Fragment() {
     ): View? {
         // Inflar el diseño del fragmento
         return inflater.inflate(R.layout.fragment_analisis, container, false)
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //firebase
+        auth = FirebaseAuth.getInstance()
 
         // Asignar referencias a las vistas
         consumoTextView = view.findViewById(R.id.consumo_actual)

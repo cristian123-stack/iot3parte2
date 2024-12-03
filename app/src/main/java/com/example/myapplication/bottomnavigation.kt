@@ -11,17 +11,24 @@ import com.example.myapplication.Vistas.AnalisisFragment
 import com.example.myapplication.Vistas.ControlFragment
 import com.example.myapplication.Vistas.TipsFragment
 import com.example.myapplication.databinding.BottomnavigationBinding
+import com.google.firebase.auth.FirebaseAuth
 
 class BottomNav : AppCompatActivity() {
 
     //configurar viewbinding
     private lateinit var binding: BottomnavigationBinding
 
+    //firebase
+    private lateinit var auth: FirebaseAuth
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
         binding = BottomnavigationBinding.inflate(layoutInflater)
         setContentView(binding.root)
+
+        //firebase
+        auth = FirebaseAuth.getInstance()
 
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.bottomNav)) { v, insets ->
             val systemBars = insets.getInsets(WindowInsetsCompat.Type.systemBars())

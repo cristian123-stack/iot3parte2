@@ -8,6 +8,7 @@
     android:id="@+id/consumo"
     android:background="@drawable/login_background">
 
+    <!--
     <TextView
         android:id="@+id/titulo"
         android:layout_width="wrap_content"
@@ -22,18 +23,18 @@
         android:gravity="center"
         android:layout_marginEnd="5dp"
         android:layout_marginStart="5dp"
-        />
+        />-->
 
     <ImageView
         android:id="@+id/imgConsumo"
         android:layout_width="wrap_content"
         android:layout_height="100dp"
-        android:layout_marginTop="30dp"
         android:contentDescription="@string/consumoelectrico"
         android:src="@drawable/energia_consumo"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/titulo" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_margin="50dp"/>
 
     <TextView
         android:id="@+id/consumo_actual"

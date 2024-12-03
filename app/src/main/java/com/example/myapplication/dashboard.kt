@@ -41,5 +41,11 @@ class dashboard : AppCompatActivity() {
             startActivity(intent)
         }
 
+        val btnApp = findViewById<Button>(R.id.dashboton1)
+        btnApp.setOnClickListener {
+            val intent = Intent(this, BottomNav::class.java)
+            startActivity(intent)
+        }
+
     }
 }

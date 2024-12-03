@@ -9,8 +9,12 @@ import android.widget.Button
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.example.myapplication.R
+import com.google.firebase.auth.FirebaseAuth
 
 class ControlFragment : Fragment() {
+
+    //firebase
+    private lateinit var auth: FirebaseAuth
 
     // Definir valor por defecto para los botones de luces y cerraduras
     private var luzXdefecto = 0
@@ -26,6 +30,9 @@ class ControlFragment : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+        //firebase
+        auth = FirebaseAuth.getInstance()
 
         // Obtener las referencias a los botones y vistas
         val luzOnOff = view.findViewById<Button>(R.id.btnLuces)
