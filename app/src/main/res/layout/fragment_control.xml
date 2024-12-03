@@ -46,7 +46,7 @@
             android:id="@+id/imgLuz"
             android:layout_width="wrap_content"
             android:layout_height="110dp"
-            android:contentDescription=""
+            android:contentDescription="@string/luz"
             android:src="@drawable/lightoff"
             app:layout_constraintBottom_toTopOf="@+id/btnLuces"
             app:layout_constraintEnd_toEndOf="parent"

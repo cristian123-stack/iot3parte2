@@ -52,4 +52,7 @@
     <string name="usa_bombillas_led_son_m_s_eficientes_y_duran_m_s">Usa bombillas LED, son más eficientes y duran más.</string>
     <string name="aprovecha_la_luz_natural_durante_el_d_a_para_reducir_el_uso_de_luces">Aprovecha la luz natural durante el día para reducir el uso de luces.</string>
     <string name="desconecta_los_aparatos_el_ctricos_que_no_uses_para_reducir_el_consumo_fantasma">Desconecta los aparatos eléctricos que no uses para reducir el consumo fantasma.</string>
+    <string name="cerrar_sesi_n">cerrar Sesión</string>
+    <string name="ir_a_la_app">Ir a la APP</string>
+    <string name="luz">luz</string>
 </resources>

@@ -10,7 +10,6 @@
     android:padding="16dp"
     tools:context=".Registro">
 
-
     <TextView
         android:id="@+id/label_registration"
         android:layout_width="wrap_content"
@@ -24,7 +23,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="24dp"
         tools:ignore="HardcodedText" />
-
 
     <EditText
         android:id="@+id/input_name"
@@ -69,7 +67,7 @@
         android:id="@+id/botonderegistro"
         android:layout_width="231dp"
         android:layout_height="76dp"
-        android:layout_marginTop="136dp"
+        android:layout_marginTop="40dp"
         android:backgroundTint="@color/azul"
         android:text="@string/registrarse"
         android:textSize="25sp"
@@ -78,15 +76,15 @@
         app:layout_constraintTop_toBottomOf="@+id/input_password" />
 
     <Button
-        android:id="@+id/botonparalogin"
+        android:id="@+id/atrasboton"
         android:layout_width="200dp"
         android:layout_height="70dp"
-        android:layout_marginTop="312dp"
+        android:layout_marginTop="16dp"
         android:backgroundTint="@color/azul"
         android:text="@string/volver"
         android:textSize="25sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/input_password" />
+        app:layout_constraintTop_toBottomOf="@+id/botonderegistro" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
